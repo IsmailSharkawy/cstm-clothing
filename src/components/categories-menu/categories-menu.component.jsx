@@ -5,7 +5,7 @@ const Menu = () => {
   return (
     <div className="categories-container">
       {categories.map((category) => (
-        <CategoryItem category={category} />
+        <CategoryItem key={category.id} category={category} />
       ))}
     </div>
   );
